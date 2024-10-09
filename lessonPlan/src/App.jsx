@@ -5,7 +5,7 @@ const App = () => {
       <Days title="Monday" />
       <Days title="Tuesday" />
       <Days title="Wednesday" />
-      <Days title="Thurstday" />
+      <Days title="Thursday" />
       <Days title="Friday" />
       <Days title="Saturday" />
       <Days title="Sunday" />
