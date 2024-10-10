@@ -11,10 +11,22 @@ const Days = ({ title }) => {
     }
   };
 
+  const addTask = () => {
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        value={lessons}
+        placeholder="Enter your lesson"
+        onChange={(e) => setLessons(e.target.value)}
+      />
+      <button type="submit">Submit</button>
+    </form>;
+  };
+
   return (
     <div>
       <h2>{title}</h2>
-      <form onSubmit={handleSubmit}>
+      {/* <form onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Enter your lesson"
@@ -22,7 +34,8 @@ const Days = ({ title }) => {
           onChange={(e) => setLessons(e.target.value)}
         />
         <button type="submit">Add Lesson</button>
-      </form>
+      </form> */}
+      <button onClick={addTask}>Add lesson</button>
 
       <ul>
         {lessonList.map((lesson, index) => (
