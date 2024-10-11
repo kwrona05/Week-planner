@@ -8,18 +8,46 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.day-div {
+    border: 1px solid black;
+    border-radius: 5%;
+    height: 60vh;
+    width: 50vh;
+    display: flex;
 }
 
 #monday {
-    background: linear-gradient(to right, #a8e6cf, #dcedf2)
+    background: linear-gradient(to right, #a8e6cf, #dcedf2);
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e7d32;
+    text-shadow: 2px 2px 5px rgba(0, 128, 0, 0.3);
 }
 
 #tuesday {
-    background: linear-gradient(to right, #fcbad3, #d1c4e9)
+    background: linear-gradient(to right, #fcbad3, #d1c4e9);
+    font-family: 'Courier New', monospace;
+    font-size: 22px;
+    font-style: italic;
+    color: #6a1b9a;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px rgba(106, 27, 154, 0.4);
 }
 
 #wednesday {
-    background: linear-gradient(to right,   #fff176, #ffcc80)
+    background: linear-gradient(to right,   #fff176, #ffcc80);
+    font-family: 'Times New Roman', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #f57f17;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 4px rgba(245, 127, 23, 0.5);
 }
 
 #thursday {
