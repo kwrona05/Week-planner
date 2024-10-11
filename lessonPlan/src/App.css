@@ -51,19 +51,42 @@
 }
 
 #thursday {
-    background: linear-gradient(to right, #81d4fa, #4dd0e1)
+    background: linear-gradient(to right, #81d4fa, #4dd0e1);
+    font-family: 'Verdana', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #0277bd;
+    text-decoration: underline;
+    text-shadow: 1px 1px 5px rgba(2, 119, 189, 0.3);
 }
 
 #friday {
-    background: linear-gradient(to right, #ce93d8, #7986cb)
+    background: linear-gradient(to right, #ce93d8, #7986cb);
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #6a1b9a;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 6px rgba(106, 27, 154, 0.5);
 }
 
 #saturday {
-    background: linear-gradient(to right, #aed581, #dce775)
+    background: linear-gradient(to right, #aed581, #dce775);
+    font-family: 'Tahoma', sans-serif;
+    font-size: 22px;
+    color: #33691e;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgba(51, 105, 30, 0.4);
 }
 
 #sunday {
     background: linear-gradient(to right, #ffccbc, #ffab91);
     grid-column: 2;
     grid-row: 3;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #bf360c;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 8px rgba(191, 54, 12, 0.6);
 }
