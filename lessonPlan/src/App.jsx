@@ -1,14 +1,21 @@
 import Days from "./components/Days";
+import "./App.css";
+
+const daysData = [
+  { id: "monday", title: "Monday" },
+  { id: "tuesday", title: "Tuesday" },
+  { id: "wednesday", title: "Wednesday" },
+  { id: "thursday", title: "Thursday" },
+  { id: "friday", title: "Friday" },
+  { id: "saturday", title: "Saturday" },
+  { id: "sunday", title: "Sunday" },
+];
 const App = () => {
   return (
     <div className="container">
-      <Days title="Monday" />
-      <Days title="Tuesday" />
-      <Days title="Wednesday" />
-      <Days title="Thursday" />
-      <Days title="Friday" />
-      <Days title="Saturday" />
-      <Days title="Sunday" />
+      {daysData.map((day) => (
+        <Days key={day.id} id={day.id} title={day.title} />
+      ))}
     </div>
   );
 };

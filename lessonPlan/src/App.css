@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#monday {
+    background: linear-gradient(to right, #a8e6cf, #dcedf2)
+}
+
+#tuesday {
+    background: linear-gradient(to right, #fcbad3, #d1c4e9)
+}
+
+#wednesday {
+    background: linear-gradient(to right,   #fff176, #ffcc80)
+}
+
+#thursday {
+    background: linear-gradient(to right, #81d4fa, #4dd0e1)
+}
+
+#friday {
+    background: linear-gradient(to right, #ce93d8, #7986cb)
+}
+
+#saturday {
+    background: linear-gradient(to right, #aed581, #dce775)
+}
+
+#sunday {
+    background: linear-gradient(to right, #ffccbc, #ffab91);
+    grid-column: 2;
+    grid-row: 3;
+}
