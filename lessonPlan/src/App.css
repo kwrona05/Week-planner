@@ -28,6 +28,8 @@ body.dark {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    transition: transform 0.2s ease;
+    will-change: transform;
 }
 
 .formDiv {
