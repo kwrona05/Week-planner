@@ -52,7 +52,7 @@ const Form = () => {
               id="delLesson"
               onClick={() => handleDelete(index)}
             >
-              Delete
+              X
             </button>
           </li>
         ))}
