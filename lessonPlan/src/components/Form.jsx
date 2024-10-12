@@ -25,10 +25,10 @@ const Form = () => {
   return (
     <div className="formDiv">
       <button className="addBtn" id="addLesson" onClick={handleButtonClick}>
-        {showForm ? "Hide form" : "Show form"} {/* Toggle button label */}
+        {showForm ? "Hide form" : "Show form"}
       </button>
 
-      {showForm && ( // Conditionally render form based on `showForm` state
+      {showForm && (
         <form onSubmit={handleSubmit}>
           <input
             type="text"
