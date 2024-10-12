@@ -4,9 +4,14 @@
     padding: 0;
 }
 
-body {
-    background-color: #fffde7;
+body.light {
+  background-color: #fffde7;
 }
+
+body.dark {
+  background-color: #2c2c2c;
+}
+
 
 .container {
     display: grid;
@@ -156,3 +161,36 @@ button {
   .delBtn:hover {
     background-color: #c82333;
   }
+
+  .toggle-button {
+    width: 60px;
+    height: 30px;
+    background-color: lightgray; /* Kolor tła dla przycisku */
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Przejście dla tła przycisku */
+}
+
+.toggle-button.dark {
+    background-color: #333; /* Kolor tła dla ciemnego motywu */
+}
+
+.toggle-circle {
+    width: 28px;
+    height: 28px;
+    background-color: white; /* Kolor kółka */
+    border-radius: 50%;
+    position: absolute;
+    top: 1px; /* Ustawienie kółka w górnej części przycisku */
+    left: 1px; /* Ustawienie kółka z lewej strony */
+    transition: transform 0.3s; /* Animacja przesuń kółko */
+}
+
+.toggle-circle.light {
+    transform: translateX(0); /* Położenie kółka dla jasnego motywu */
+}
+
+.toggle-circle.dark {
+    transform: translateX(30px); /* Położenie kółka dla ciemnego motywu */
+}
