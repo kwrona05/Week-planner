@@ -1,3 +1,4 @@
+import React from "react";
 import Days from "./components/Days";
 import { ThemeProvider, useTheme } from "./components/SwitchTheme";
 import "./App.css";
@@ -17,10 +18,17 @@ const ThemedApp = () => {
 
   return (
     <div>
-      <div className="toggle-button" onClick={toggleTheme}>
-        <div className={`toggle-circle ${theme}`}></div>
+      <div
+        className="toggle-button"
+        onClick={toggleTheme}
+        data-testid="toggleTest"
+      >
+        <div
+          className={`toggle-circle ${theme}`}
+          data-testid="circleTest"
+        ></div>
       </div>
-      <div className="container">
+      <div className="container" data-testid="dayTest">
         {daysData.map((day) => (
           <Days key={day.id} id={day.id} title={day.title} />
         ))}

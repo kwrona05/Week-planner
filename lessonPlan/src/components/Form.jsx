@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const Form = () => {
   const [showForm, setShowForm] = useState(false);
@@ -23,8 +23,13 @@ const Form = () => {
   };
 
   return (
-    <div className="formDiv">
-      <button className="addBtn" id="addLesson" onClick={handleButtonClick}>
+    <div className="formDiv" data-testid="formDiv">
+      <button
+        className="addBtn"
+        id="addLesson"
+        onClick={handleButtonClick}
+        data-testid="addBtn"
+      >
         {showForm ? "Hide form" : "Show form"}
       </button>
 
@@ -35,14 +40,19 @@ const Form = () => {
             value={lessons}
             onChange={(e) => setLessons(e.target.value)}
             placeholder="Enter your lessons"
+            data-testid="inputText"
           />
-          <button className="submitBtn" type="submit">
+          <button
+            className="submitBtn"
+            type="submit"
+            data-testid="submitButton"
+          >
             +
           </button>
         </form>
       )}
 
-      <ul>
+      <ul data-testid="ulTest">
         {lessonList.map((lesson, index) => (
           <li key={index}>
             {lesson}
@@ -51,6 +61,7 @@ const Form = () => {
               className="delBtn"
               id="delLesson"
               onClick={() => handleDelete(index)}
+              data-testid="deleteBtn"
             >
               X
             </button>

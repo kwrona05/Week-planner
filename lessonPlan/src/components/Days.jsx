@@ -1,3 +1,4 @@
+import React from "react";
 import Form from "./Form";
 import { useRef } from "react";
 const Days = ({ id, title }) => {
@@ -27,7 +28,7 @@ const Days = ({ id, title }) => {
       className="day-div"
       id={id}
     >
-      <h2>{title}</h2>
+      <h2 data-testid="titleText">{title}</h2>
       <Form />
     </div>
   );
