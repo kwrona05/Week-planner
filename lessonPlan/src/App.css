@@ -163,34 +163,35 @@ button {
   }
 
   .toggle-button {
-    width: 60px;
+    width: 50px;
     height: 30px;
-    background-color: lightgray; /* Kolor tła dla przycisku */
+    background-color: lightgray;
     border-radius: 15px;
     position: relative;
     cursor: pointer;
-    transition: background-color 0.3s; /* Przejście dla tła przycisku */
+    transition: background-color 0.3s;
+    margin-left: 1370px;
 }
 
 .toggle-button.dark {
-    background-color: #333; /* Kolor tła dla ciemnego motywu */
+    background-color: #333;
 }
 
 .toggle-circle {
     width: 28px;
     height: 28px;
-    background-color: white; /* Kolor kółka */
+    background-color: white;
     border-radius: 50%;
     position: absolute;
-    top: 1px; /* Ustawienie kółka w górnej części przycisku */
-    left: 1px; /* Ustawienie kółka z lewej strony */
-    transition: transform 0.3s; /* Animacja przesuń kółko */
+    top: 1px;
+    left: 1px;
+    transition: transform 0.3s;
 }
 
 .toggle-circle.light {
-    transform: translateX(0); /* Położenie kółka dla jasnego motywu */
+    transform: translateX(0);
 }
 
 .toggle-circle.dark {
-    transform: translateX(30px); /* Położenie kółka dla ciemnego motywu */
+    transform: translateX(19px); 
 }

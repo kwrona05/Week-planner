@@ -17,10 +17,10 @@ const ThemedApp = () => {
 
   return (
     <div>
-      <button className="toggleBtn" onClick={toggleTheme}>
-        Toggle
-      </button>
-      <div className={`container ${theme}`}>
+      <div className="toggle-button" onClick={toggleTheme}>
+        <div className={`toggle-circle ${theme}`}></div>
+      </div>
+      <div className="container">
         {daysData.map((day) => (
           <Days key={day.id} id={day.id} title={day.title} />
         ))}
