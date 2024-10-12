@@ -23,8 +23,8 @@ const Form = () => {
   };
 
   return (
-    <div>
-      <button id="addLesson" onClick={handleButtonClick}>
+    <div className="formDiv">
+      <button className="addBtn" id="addLesson" onClick={handleButtonClick}>
         {showForm ? "Hide form" : "Show form"} {/* Toggle button label */}
       </button>
 
@@ -36,7 +36,9 @@ const Form = () => {
             onChange={(e) => setLessons(e.target.value)}
             placeholder="Enter your lessons"
           />
-          <button type="submit">Submit</button>
+          <button className="submitBtn" type="submit">
+            +
+          </button>
         </form>
       )}
 
@@ -45,7 +47,11 @@ const Form = () => {
           <li key={index}>
             {lesson}
             {""}
-            <button id="delLesson" onClick={() => handleDelete(index)}>
+            <button
+              className="delBtn"
+              id="delLesson"
+              onClick={() => handleDelete(index)}
+            >
               Delete
             </button>
           </li>
